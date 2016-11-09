@@ -1,8 +1,3 @@
-.board {
- 	height: 50%;
- 	width: 50%;
- 	display: inline-block;
-}
 .card {
  	height: 200px;
  	width: 150px;
@@ -11,6 +6,12 @@
  	border-radius: 10px;
  	float: left;
  	margin: 8%;
+}
+.board {
+ 	height: 80%;
+ 	width: 50%;
+ 	display: inline-block;
+ 	padding-left: 10%
 }
 h2 {
 	color: #ffd700;
