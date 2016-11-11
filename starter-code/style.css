@@ -50,3 +50,7 @@ footer {
 	clear:both;
 	background-color: #808080;
 }
+img {
+	height: 200px;
+  	width: 150px;
+}
