@@ -11,23 +11,22 @@ function createBoard() {
     cardElement.setAttribute('data-card', cards[i]);
     cardElement.addEventListener('click', isTwoCards);
     board.appendChild(cardElement);
-    board.appendChild(cardElement);
   	}
 }
 
 function isTwoCards() {
 	cardsInPlay.push(this.getAttribute('data-card'));
-	console.log(this.getAttribute('data-card'));
+	//console.log(this.getAttribute('data-card'));
 	if (this.getAttribute('data-card') === 'king') {
-		this.innerHTML = "<img src='clubs-884198_960_720.png'>";
-	} else {
-		this.innerHTML = "<img src='spades-884197_960_720.png'>";
-	}
-  if (cardsInPlay.length === 2) {
-		isMatch(cardsInPlay);
-		cardsInPlay = [];
+		this.innerHTML = "<img src='https://cdn.pixabay.com/photo/2015/08/11/11/57/clubs-884194__340.png'>";
+	}  else {
+		this.innerHTML = "<img src='https://cdn.pixabay.com/photo/2015/08/11/11/57/clubs-884198__340.png'>";
+	}  if (cardsInPlay.length === 2) {
+    setTimeout(function() {
+      isMatch(cardsInPlay);
+    }, 300);
   }
-}
+};
 
 function isMatch(cards) {
 	if (cards[0] === cards[1]) {
