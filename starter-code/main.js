@@ -22,7 +22,7 @@ function isTwoCards() {
 		this.innerHTML = "<img src='clubs-884198_960_720.png'>";
 	} else {
 		this.innerHTML = "<img src='spades-884197_960_720.png'>";
-	}	
+	}
   if (cardsInPlay.length === 2) {
 		isMatch(cardsInPlay);
 		cardsInPlay = [];
