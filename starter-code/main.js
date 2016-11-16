@@ -16,12 +16,13 @@ function createBoard() {
 
 function isTwoCards() {
 	cardsInPlay.push(this.getAttribute('data-card'));
-	//console.log(this.getAttribute('data-card'));
 	if (this.getAttribute('data-card') === 'king') {
 		this.innerHTML = "<img src='https://cdn.pixabay.com/photo/2015/08/11/11/57/clubs-884194__340.png'>";
 	}  else {
 		this.innerHTML = "<img src='https://cdn.pixabay.com/photo/2015/08/11/11/57/clubs-884198__340.png'>";
-	}  if (cardsInPlay.length === 2) {
+}
+
+if (cardsInPlay.length === 2) {
     setTimeout(function() {
       isMatch(cardsInPlay);
     }, 300);
@@ -31,9 +32,10 @@ function isTwoCards() {
 function isMatch(cards) {
 	if (cards[0] === cards[1]) {
 		alert("You found a match!");
-	}  	else {
+	}  else {
 		alert("Sorry, try again.");
-	}
+	};
+  cardsInPlay = [];
 }
 
 createBoard();
